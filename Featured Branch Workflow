@@ -1,0 +1,26 @@
+Featured Branch Workflow
+
+#create a local feature1 branch
+git checkout -b feature1
+
+# add a file
+touch feature1.txt
+git add feature1.txt
+
+# push to local branch
+git commit -m "Added the feature1"
+
+# push to remote branch
+git push -u origin feature1
+
+# to push to master branch
+git checkout master
+
+# update local repository
+git pull
+
+# merge feature1
+git merge feature1
+
+# push to remote
+git push
