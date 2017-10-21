@@ -1,0 +1,9 @@
+Centralised Workflow
+only one branch
+
+write changes to code
+git status
+git add README.md
+git status
+git commit -m "Added lines to the README.md"
+git push
