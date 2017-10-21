@@ -1,0 +1,29 @@
+Gitflow Workflow 
+# create a develop branch
+git checkout -b develop
+
+# make the branch visible to developers
+git push -u origin develop
+
+# create a feature2 branch
+git checkout -b feature2
+
+# add file to feature2 branch
+git add feature2.txt
+
+# commit changes
+git commit -m "Added feature2.txt"
+git push -u origin feature2
+
+# change branch to develop
+git checkout develop
+git pull
+git merge feature2 
+git push
+
+# release to production
+git checkout master 
+git pull
+git merge develop
+git tag "1.0.0.release" -m "Releasing version 1.0.0"
+git push --tags
