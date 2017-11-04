@@ -1,5 +1,10 @@
 Centralised Workflow
 only one branch
+_______________________________________________
+for removing the folder
+git rm -r --cached node_modules
+git commit -m "removing node_modules"
+_______________________________________________
 
 write changes to code
 git status
